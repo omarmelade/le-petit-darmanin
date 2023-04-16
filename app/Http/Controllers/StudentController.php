@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\Author;
 use Illuminate\Http\Request;
 use App\Models\Student;
 
@@ -25,7 +26,8 @@ class StudentController extends Controller
      */
     public function create()
     {
-        return view('create');
+        $authors = Author::all();
+        return view('create', compact("authors"));
     }
 
     /**

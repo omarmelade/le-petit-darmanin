@@ -1,49 +1,28 @@
 @extends('layout')
 
 @section('content')
-
-<style>
-  .push-top {
-    margin-top: 50px;
-  }
-</style>
-
-<div class="push-top">
-  @if(session()->get('success'))
-    <div class="alert alert-success">
-      {{ session()->get('success') }}  
-    </div><br />
-  @endif
-  <table class="table">
-    <thead>
-        <tr class="table-warning">
-          <td>ID</td>
-          <td>Name</td>
-          <td>Email</td>
-          <td>Phone</td>
-          <td>Password</td>
-          <td class="text-center">Action</td>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach($student as $students)
-        <tr>
-            <td>{{$students->id}}</td>
-            <td>{{$students->name}}</td>
-            <td>{{$students->email}}</td>
-            <td>{{$students->phone}}</td>
-            <td>{{$students->password}}</td>
-            <td class="text-center">
-                <a href="{{ route('students.edit', $students->id)}}" class="btn btn-primary btn-sm"">Edit</a>
-                <form action="{{ route('students.destroy', $students->id)}}" method="post" style="display: inline-block">
-                    @csrf
-                    @method('DELETE')
-                    <button class="btn btn-danger btn-sm"" type="submit">Delete</button>
-                  </form>
-            </td>
-        </tr>
-        @endforeach
-    </tbody>
-  </table>
-<div>
+    <div>
+        <h2>Description</h2>
+        <hr>
+        <p>Le Petit Darmanin est un projet qui consiste à réunir toutes les phrases *choc* du ministre de l'Intérieur.
+            Etant donnée qu'il créé des mots à chaque nouvelle prise de parole, nous avons décidé de créer un dictionnaire.
+        </p>
+    </div>
+    <br>
+    <div>
+        <h2>Définitions</h2>
+        <hr>
+        <div class="cards">
+            @foreach($definitions as $definition)
+                <div class="card-def">
+                    <p class="word">{{$definition->word}}</p>
+                    <p>{{$definition->definition}}</p>
+                    <p class="author">{{$authors->firstWhere('id', $definition->author_id)->firstname}}
+                        {{$authors->firstWhere('id', $definition->author_id)->lastname}}</p>
+                </div>
+            @endforeach
+        </div>
+    </div>
 @endsection
+
+

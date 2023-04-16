@@ -1,5 +1,6 @@
-# laravel-crud-app
+# le Petit Darmanin
 
-Create PHP Laravel 8 CRUD web application with MySQL Database.
+## Description
 
-[Create PHP Laravel 8/7 CRUD Web App with MySQL Database](https://www.positronx.io/php-laravel-crud-operations-mysql-tutorial/)
+Le Petit Darmanin est un projet qui consiste à réunir toutes les phrases *choc* du ministre de l'Intérieur.
+Etant donnée qu'il créé des mots à chaque nouvelle prise de parole, nous avons décidé de créer un dictionnaire.
