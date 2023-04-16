@@ -32,7 +32,6 @@ RUN docker-php-ext-configure gd \
     && docker-php-ext-install gd
 
 COPY --from=build /app /var/www/html
-COPY .env /var/www/html/.env
 
 RUN php artisan config:cache && \
     php artisan route:cache && \
