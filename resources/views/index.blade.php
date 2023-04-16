@@ -4,7 +4,7 @@
     <div>
         <h2>Description</h2>
         <hr>
-        <p>Le Petit Darmanin est un projet qui consiste à réunir toutes les phrases *choc* du ministre de l'Intérieur.
+        <p>Le Petit Darmanin est un projet qui consiste à réunir toutes les phrases *choc* du ministre de l'Intérieur.<br>
             Etant donnée qu'il créé des mots à chaque nouvelle prise de parole, nous avons décidé de créer un dictionnaire.
         </p>
     </div>
