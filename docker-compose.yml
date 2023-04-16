@@ -9,7 +9,7 @@ services:
     volumes:
       - ./:/app
     ports:
-      - "80:80"
+      - "80:8081"
     depends_on:
       - database
     networks:
