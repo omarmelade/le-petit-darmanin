@@ -4,6 +4,8 @@ RUN composer update && composer install --prefer-dist --no-dev --optimize-autolo
 
 FROM php:8.0-apache-buster as production
 
+WORKDIR /var/www/html
+
 ENV APP_ENV=production
 ENV APP_DEBUG=false
 
