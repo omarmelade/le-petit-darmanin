@@ -1,39 +1,59 @@
 version: '3'
+
+networks:
+  laravel:
+
 services:
-  app:
+  nginx:
+    image: nginx:stable-alpine
+    container_name: nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - ./src:/var/www/html
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - php
+      - mysql
+    networks:
+      - laravel
+
+  mysql:
+    image: mysql:5.7
+    container_name: mysql
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql:/var/lib/mysql
+    environment:
+        MYSQL_DATABASE: laravel
+        MYSQL_USER: laravel
+        MYSQL_PASSWORD: secret
+        MYSQL_ROOT_PASSWORD: secret
+        SERVICE_TAGS: dev
+        SERVICE_NAME: mysql
+    networks:
+      - laravel
+
+  php:
     build:
       context: .
       dockerfile: Dockerfile
-    restart: unless-stopped
-    working_dir: /app/dico-darmanin
+    container_name: php
     volumes:
-      - ./:/app
-    depends_on:
-      - database
-    networks:
-      - app-network
-      - npm-network
-
-  database:
-    image: mysql:5.7
-    restart: unless-stopped
-    environment:
-      MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
-      MYSQL_ROOT_HOST: '%'
-      MYSQL_DATABASE: '${DB_DATABASE}'
-      MYSQL_USER: '${DB_USERNAME}'
-      MYSQL_PASSWORD: '${DB_PASSWORD}'
+      - ./src:/var/www/html
     ports:
-      - '${FORWARD_DB_PORT:-3306}:3306'
+      - "9000:9000"
     networks:
-      - app-network
+      - laravel
 
-networks:
-  app-network:
-    driver: bridge
-  npm-network:
-    external: true
-
-volumes:
-  db-data:
-    driver: local
+  composer:
+    image: composer:latest
+    container_name: composer
+    volumes:
+      - ./src:/var/www/html
+    working_dir: /var/www/html
+    networks:
+      - laravel

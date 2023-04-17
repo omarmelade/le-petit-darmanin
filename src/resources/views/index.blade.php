@@ -4,8 +4,9 @@
     <div>
         <h2>Description</h2>
         <hr>
-        <p>Le Petit Darmanin est un projet qui consiste à réunir toutes les phrases *choc* du ministre de l'Intérieur.<br>
-            Etant donnée qu'il créé des mots à chaque nouvelle prise de parole, nous avons décidé de créer un dictionnaire.
+        <p>Le Petit Darmanin est un projet qui tend à réunir toutes les phrases <i>choc</i> du gouvernement.<br>
+            L'idée m'est venue lorsque j'ai entendu Yael Gauze dire « Il faudrait que quelqu'un fasse un dictionnaire Darmanin ».<br>
+            Etant donnée qu'il créait des mots à chaque nouvelle prise de parole, j'ai décidé de créer ce <b>modeste</b> dictionnaire.
         </p>
     </div>
     <br>

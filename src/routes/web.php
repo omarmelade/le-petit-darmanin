@@ -17,6 +17,11 @@ use App\Http\Controllers\StudentController;
 |
 */
 
-Route::resource('students', StudentController::class);
+Route::get('/', function () {
+    return view('index', [
+        'definitions' => App\Models\Definition::all()
+    ]);
+});
+
 Route::resource('definitions', DefinitionController::class);
 Route::resource('authors', AuthorController::class);
