@@ -16,8 +16,10 @@
         <div class="cards">
             @foreach($definitions as $definition)
                 <div class="card-def">
-                    <p class="word">{{$definition->word}}</p>
-                    <p>{{$definition->definition}}</p>
+                    <div>
+                        <p class="word">{{$definition->word}}</p>
+                        <p>{{$definition->definition}}</p>
+                    </div>
                     <p class="author">{{$authors->firstWhere('id', $definition->author_id)->firstname}}
                         {{$authors->firstWhere('id', $definition->author_id)->lastname}}</p>
                 </div>
