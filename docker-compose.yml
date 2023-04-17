@@ -2,6 +2,9 @@ version: '3'
 
 networks:
   laravel:
+  npm-network:
+    external: true
+
 
 services:
   nginx:
@@ -17,6 +20,7 @@ services:
       - mysql
     networks:
       - laravel
+      - npm-network
 
   mysql:
     image: mysql:5.7
