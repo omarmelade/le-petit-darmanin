@@ -37,21 +37,21 @@
 }
 
 /* title */
-.card-def > .word {
+.word {
     font-weight: 600;
     font-size: 24px;
     text-align: start;
 }
 
 /* definition */
-.card-def > p {
+.def {
     font-size: 16px;
     line-height: 30px;
     color: #000000;
 }
 
 /* definition */
-.card-def > .author {
+.author {
     font-size: 21px;
     text-align: end;
 }

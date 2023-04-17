@@ -18,7 +18,7 @@
                 <div class="card-def">
                     <div>
                         <p class="word">{{$definition->word}}</p>
-                        <p>{{$definition->definition}}</p>
+                        <p class="def">{{$definition->definition}}</p>
                     </div>
                     <p class="author">{{$authors->firstWhere('id', $definition->author_id)->firstname}}
                         {{$authors->firstWhere('id', $definition->author_id)->lastname}}</p>
