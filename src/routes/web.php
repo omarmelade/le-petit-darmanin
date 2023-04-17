@@ -4,7 +4,6 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\AuthorController;
 use App\Http\Controllers\DefinitionController;
-use App\Http\Controllers\StudentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,7 +18,8 @@ use App\Http\Controllers\StudentController;
 
 Route::get('/', function () {
     return view('index', [
-        'definitions' => App\Models\Definition::all()
+        'definitions' => App\Models\Definition::all(),
+        'authors' => App\Models\Author::all()
     ]);
 });
 
