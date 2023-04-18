@@ -5,8 +5,7 @@
         <h2>Description</h2>
         <hr>
         <p>Le Petit Darmanin est un projet qui tend à réunir toutes les phrases <i>choc</i> du gouvernement.<br>
-            L'idée m'est venue lorsque j'ai entendu Yael Gauze dire « Il faudrait que quelqu'un fasse un dictionnaire Darmanin ».<br>
-            Etant donnée qu'il créait des mots à chaque nouvelle prise de parole, j'ai décidé de créer ce <b>modeste</b> dictionnaire.
+            Étant donnée qu'il crée des mots à chaque nouvelle prise de parole, j'ai décidé de créer ce <b>modeste</b> dictionnaire.
         </p>
     </div>
     <br>
