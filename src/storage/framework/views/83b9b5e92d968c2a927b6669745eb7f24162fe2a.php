@@ -14,8 +14,10 @@
         <div class="cards">
             <?php $__currentLoopData = $definitions; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $definition): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                 <div class="card-def">
-                    <p class="word"><?php echo e($definition->word); ?></p>
-                    <p><?php echo e($definition->definition); ?></p>
+                    <div>
+                        <p class="word"><?php echo e($definition->word); ?></p>
+                        <p class="def"><?php echo e($definition->definition); ?></p>
+                    </div>
                     <p class="author"><?php echo e($authors->firstWhere('id', $definition->author_id)->firstname); ?>
 
                         <?php echo e($authors->firstWhere('id', $definition->author_id)->lastname); ?></p>

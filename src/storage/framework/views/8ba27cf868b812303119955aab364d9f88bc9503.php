@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Le Petit Darmanin</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<meta name="description" content="Le petit darmanin est un dictionnaire qui recense tous les mots et expressions parfois vagues et incompréhensibles utilisés par le ministre de l’intérieur.">
+	<title>Le Petit Darmanin</title>
+        <link rel="stylesheet" href="<?php echo e(asset('css/bootstrap.css')); ?>">
         <link rel="stylesheet" href="<?php echo e(asset('css/app.css')); ?>">
     </head>
     <body>

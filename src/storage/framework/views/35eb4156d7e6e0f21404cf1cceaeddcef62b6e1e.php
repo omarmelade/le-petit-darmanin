@@ -2,7 +2,7 @@
 <div class="header-banner">
     <div class="logo-center">
             <a href="#">
-                <img src="<?php echo e(asset('images/lepetitdarmanin-white.png')); ?>" id="logo-img">
+                <img alt="Logo LePetitDarmanin" src="<?php echo e(asset('images/lepetitdarmanin-white.png')); ?>" id="logo-img">
             </a>
     </div>
 </div>

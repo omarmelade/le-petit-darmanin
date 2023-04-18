@@ -1,7 +1,7 @@
 
 <div id="footer">
     <div id="footer-content">
-        <img src="<?php echo e(asset('images/ledarmanin-white.png')); ?>" id="logo-footer-img">
+        <img alt="Petit logo LePetitDarmanin" src="<?php echo e(asset('images/ledarmanin-white.png')); ?>" id="logo-footer-img">
         <p>© 2023 omarmelade. All rights reserved.</p>
     </div>
 </div>
