@@ -23,5 +23,5 @@ Route::get('/', function () {
     ]);
 });
 
-Route::resource('definitions', DefinitionController::class);
-Route::resource('authors', AuthorController::class);
+// Route::resource('definitions', DefinitionController::class);
+// Route::resource('authors', AuthorController::class);

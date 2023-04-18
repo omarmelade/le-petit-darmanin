@@ -13,7 +13,7 @@
 
 <div class="card push-top">
   <div class="card-header">
-    Add User
+    Ajouter une définition
   </div>
 
   <div class="card-body">

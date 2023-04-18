@@ -77,16 +77,16 @@
 }
 
 .content-wrap {
-    margin-top: 2.5em;
-    padding-bottom: 5em;
+    padding-top: 2.5em;
+    padding-bottom: 10em;
 }
 
 #footer {
     position: fixed;
     bottom: 0;
-    padding: 1em;
+    padding: .5em;
     width: 100%;
-    height: 8rem;
+    height: 4rem;
     background-color: #2E86AB;
     color: white;
 }
@@ -94,9 +94,10 @@
 #footer-content {
     width: 100%;
     margin: 0 auto;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;;
+    justify-items: center;
     display: flex;
 }
 
@@ -121,8 +122,8 @@
         border-radius: 20px;
         padding: 20px;
     }
-    
-    #footer { 
+
+    #footer {
 	display:none;
     }
 }
