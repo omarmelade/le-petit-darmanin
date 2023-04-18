@@ -58,8 +58,8 @@ class DefinitionController extends Controller
      */
     public function destroy($id)
     {
-        $student = Definition::findOrFail($id);
-        $student->delete();
+        $def = Definition::findOrFail($id);
+        $def->delete();
 
         return redirect('/definitions')->with('completed', 'Definition has been deleted');
     }
