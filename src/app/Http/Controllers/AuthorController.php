@@ -44,8 +44,8 @@ class AuthorController extends Controller
      */
     public function destroy($id)
     {
-        $student = Author::findOrFail($id);
-        $student->delete();
+        $author = Author::findOrFail($id);
+        $author->delete();
 
         return redirect('/definitons');
     }
