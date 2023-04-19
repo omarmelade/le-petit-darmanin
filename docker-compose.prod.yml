@@ -2,6 +2,8 @@ version: '3'
 
 networks:
   laravel:
+  npm-network:
+    external: true
 
 
 services:
@@ -11,21 +13,18 @@ services:
     volumes:
       - ./src:/var/www/html
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
-    ports:
-        - "8088:80"
     depends_on:
       - php
       - mysql
     networks:
       - laravel
+      - npm-network
 
   mysql:
     image: mysql:5.7
     container_name: mysql
     restart: unless-stopped
     tty: true
-    ports:
-      - "3306:3306"
     volumes:
       - ./mysql:/var/lib/mysql
     environment:
