@@ -28,11 +28,10 @@ services:
     volumes:
       - ./mysql:/var/lib/mysql
     environment:
-        MYSQL_DATABASE: laravel
-        MYSQL_USER: laravel
-        MYSQL_PASSWORD: secret
-        MYSQL_ROOT_PASSWORD: secret
-        SERVICE_TAGS: dev
+        MYSQL_DATABASE: ${MYSQL_DATABASE}
+        MYSQL_USER: ${MYSQL_USER}
+        MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+        MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
         SERVICE_NAME: mysql
     networks:
       - laravel
