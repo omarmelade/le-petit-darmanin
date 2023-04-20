@@ -8,14 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class Author extends Model
 {
     use HasFactory;
-    protected $fillable = ['firstname', 'lastname'];
+    protected $fillable = ['firstname', 'lastname', 'fullname'];
 
-    private $lastname;
-    private $firstname;
-
-
-    function name(): string
+    public function fullname()
     {
-        return $this->firstname.' '.$this->lastname;
+        return $this->firstname . ' ' . $this->lastname;
+    }
+
+    public function definitions()
+    {
+        return $this->hasMany(Definition::class);
     }
 }

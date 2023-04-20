@@ -8,5 +8,21 @@ use Illuminate\Database\Eloquent\Model;
 class Definition extends Model
 {
     use HasFactory;
-    protected $fillable = ['word', 'definition', 'author_id'];
+    protected $fillable = ['definition', 'word_id' ,'author_id'];
+
+    public function word()
+    {
+        return $this->belongsTo(Word::class);
+    }
+
+    public function author()
+    {
+        return $this->belongsTo(Author::class);
+    }
+
+    public function examples()
+    {
+        return $this->hasMany(DefinitonExample::class);
+    }
+
 }

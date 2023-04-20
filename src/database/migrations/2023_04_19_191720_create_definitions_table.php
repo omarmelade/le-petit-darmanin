@@ -15,8 +15,10 @@ class CreateDefinitionsTable extends Migration
     {
         Schema::create('definitions', function (Blueprint $table) {
             $table->id();
-            $table->string('word')->unique();
             $table->string('definition');
+            $table->unsignedBigInteger('word_id');
+            $table->foreign('word_id')
+                ->references('id')->on('words')->onDelete('cascade');
             $table->unsignedBigInteger('author_id');
             $table->foreign('author_id')
                 ->references('id')->on('authors')->onDelete('cascade');

@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\AuthorController;
 use App\Http\Controllers\DefinitionController;
+use App\Http\Controllers\DefinitonExampleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,10 +19,10 @@ use App\Http\Controllers\DefinitionController;
 
 Route::get('/', function () {
     return view('index', [
-        'definitions' => App\Models\Definition::all(),
-        'authors' => App\Models\Author::all()
+        'words' => App\Models\Word::all(),
     ]);
 });
 
-// Route::resource('definitions', DefinitionController::class);
-// Route::resource('authors', AuthorController::class);
+Route::resource('examples', DefinitonExampleController::class);
+Route::resource('definitions', DefinitionController::class);
+Route::resource('authors', AuthorController::class);

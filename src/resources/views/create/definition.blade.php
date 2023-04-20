@@ -4,7 +4,7 @@
 
 <style>
     .container {
-      max-width: 450px;
+      max-width: 500px;
     }
     .push-top {
       margin-top: 50px;
@@ -33,9 +33,31 @@
               <input type="text" class="form-control" name="word"/>
           </div>
           <div class="form-group">
+              <div class="form-flex-row">
+                  <div>
+                      <label for="word_class">Classe</label>
+                      <select name="word_class" class="form-control">
+                          @foreach(\App\Enums\WordClassEnum::values() as $key=>$value)
+                              <option value="{{ $key }}">{{ $value }}</option>
+                          @endforeach
+                      </select>
+                  </div>
+                  <div>
+                      <label for="gender">Genre</label>
+                      <div class="form-flex-row radio">
+                          @foreach(\App\Enums\GenderEnum::values()  as $key=>$value)
+                              <div>
+                                  <input name="gender" type="radio" value="{{ $key }}">
+                                  <label for="gender">{{ $value }}</label>
+                              </div>
+                          @endforeach
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="form-group">
               <label for="definition">Definition</label>
-              <textarea class="form-control" name="definition" placeholder="La definition de votre mot">
-              </textarea>
+              <textarea class="form-control" name="definition" placeholder="La definition de votre mot"></textarea>
           </div>
           <div class="form-group">
               <label for="author_id">Auteur</label>
