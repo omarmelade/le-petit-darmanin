@@ -3,23 +3,37 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: "Lato";
+    src: local("Lato"), url("../fonts/Lato/Lato-Regular.ttf") format("truetype");
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    background-color: #F0F0F0;
+}
+
+.container {
+    max-width: 800px;
+}
+
 .header-banner {
     background-color: #2E86AB;
+    padding: .5em;
 }
 
 .logo-center {
-    padding-top: 0.5em;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .logo-center img {
-    height: 200px;
+    height: 100px;
 }
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(70%, 1fr));
     row-gap: 5ch;
     column-gap: 5ch;
 }
@@ -28,10 +42,10 @@
 .card-def {
     width: 100%;
     background: #ffffff;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.20);
+    border-radius: 3px;
     padding: 20px;
-    justify-content: space-between;
+    justify-content: flex-start;
     display: flex;
     flex-direction: column;
 }
@@ -39,15 +53,47 @@
 /* title */
 .word {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 1.5em;
     text-align: start;
+    margin-bottom: 0;
+}
+
+.word-type {
+    text-align: start;
+    font-size: 18px;
+    font-style: italic;
+    color: #2E86AB;
+}
+
+.def-list {
+    font-size: 18px;
+    word-spacing: .1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.def-list-item {
+    line-height: 24px;
+    margin-bottom: 5px;
+}
+
+.index-def {
+    font-weight: bold;
+    color: #000;
 }
 
 /* definition */
 .def {
-    font-size: 16px;
-    line-height: 30px;
+    color: #124762;
+    margin-bottom: 0;
+}
+
+.def-example {
+    font-size: 95%;
     color: #000000;
+    font-style: italic;
+    margin-bottom: 0;
 }
 
 /* definition */
@@ -101,6 +147,26 @@
     display: flex;
 }
 
+/* FORM RULES */
+
+.form-flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.form-flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.radio {
+    padding: 0 10px;
+}
+
+
 /* media query for image size */
 @media only screen and (max-width: 600px) {
     .logo-center img {
@@ -118,13 +184,18 @@
     .card-def {
         width: 100%;
         background: #ffffff;
-        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 20px;
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.20);
+        border-radius: 3px;
         padding: 20px;
+        justify-content: flex-start;
+        display: flex;
+        flex-direction: column;
     }
 
     #footer {
 	display:none;
     }
 }
+
+
 

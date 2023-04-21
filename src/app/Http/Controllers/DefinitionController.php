@@ -2,9 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Enums\GenderEnum;
+use App\Enums\WordClassEnum;
 use App\Models\Author;
 use App\Models\Definition;
+use App\Models\Word;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rules\Enum;
+use function Sodium\add;
 
 class DefinitionController extends Controller
 {
@@ -15,9 +20,8 @@ class DefinitionController extends Controller
      */
     public function index()
     {
-        $definitions = Definition::all();
-        $authors = Author::all();
-        return view('index', compact('definitions', 'authors'));
+        $words = Word::all();
+        return view('index', compact('words'));
     }
 
     /**
@@ -39,12 +43,23 @@ class DefinitionController extends Controller
      */
     public function store(Request $request)
     {
-        $storeData = $request->validate([
+        $wordClassData = $request->validate([
             'word' => 'required|max:255',
-            'definition' => 'required',
+            'word_class' => [new Enum(WordClassEnum::class)],
+            'gender' => [new Enum(GenderEnum::class)]
+        ]);
+
+        $word = Word::where('word', $wordClassData['word'])->first();
+        if (!$word) {
+            $word = Word::create($wordClassData);
+        }
+
+        $defData = $request->validate([
+            'definition' => 'required|max:255',
             'author_id' => 'required'
         ]);
-        $def = Definition::create($storeData);
+
+        $def = Definition::create(array_merge($defData, ['word_id' => $word->id]));
 
         return redirect('/definitions')->with('completed', 'Definition has been saved!');
     }
