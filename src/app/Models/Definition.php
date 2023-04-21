@@ -22,7 +22,7 @@ class Definition extends Model
 
     public function examples()
     {
-        return $this->hasMany(DefinitonExample::class);
+        return $this->hasMany(DefinitionExample::class);
     }
 
 }

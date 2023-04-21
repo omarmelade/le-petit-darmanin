@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateDefinitonExamplesTable extends Migration
+class CreateDefinitionExamplesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateDefinitonExamplesTable extends Migration
      */
     public function up()
     {
-        Schema::create('definiton_examples', function (Blueprint $table) {
+        Schema::create('definition_examples', function (Blueprint $table) {
             $table->id();
             $table->string('example');
             $table->unsignedBigInteger('definition_id');
@@ -30,6 +30,6 @@ class CreateDefinitonExamplesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('definiton_examples');
+        Schema::dropIfExists('definition_examples');
     }
 }

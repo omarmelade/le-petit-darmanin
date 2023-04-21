@@ -20,16 +20,19 @@
                         <p class="word">{{$word->word}}</p>
                         <div class="word-type">
                             <label class="sword-clas">{{strtolower($word->word_class->value)}}</label>
-                            <label class="gender">{{strtolower($word->gender->value)}}</label>
+                            @if ($word->gender->value != \App\Enums\GenderEnum::Neutre)
+                                <label class="gender">{{strtolower($word->gender->value)}}</label>
+                            @endif
                         </div>
                     </div>
                     <div class="def-list">
                         @foreach($word->definitions as $definition)
                             <div class="def-list-item">
-                                <label class="def"><label class="index-def">{{$loop->index + 1}}.</label> {{$definition->definition}}</label>
-                                @foreach($definition->examples as $ex)
-                                    ,<i><label>{{$ex->example}}</label></i>
-                                @endforeach
+                                <label class="def"><label class="index-def">{{$loop->index + 1}}</label> {{$definition->definition}}
+                                    @foreach($definition->examples as $ex)
+                                        ,<i><label>{{$ex->example}}</label></i>
+                                    @endforeach
+                                </label>
                             </div>
                         @endforeach
                     </div>
