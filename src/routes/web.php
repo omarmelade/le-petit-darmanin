@@ -23,6 +23,6 @@ Route::get('/', function () {
     ]);
 });
 
-Route::resource('examples', DefinitonExampleController::class);
-Route::resource('definitions', DefinitionController::class);
-Route::resource('authors', AuthorController::class);
+//Route::resource('examples', DefinitonExampleController::class);
+//Route::resource('authors', AuthorController::class);
+//Route::resource('definitions', DefinitionController::class);
