@@ -49,5 +49,11 @@ class WordSeeder extends Seeder
             'word_class' => 'Expression',
             'gender' => 'Neutre'
         ]);
+
+        Word::create([
+            'word' => 'dispositifs sonores portatifs',
+            'word_class' => 'Expression',
+            'gender' => 'Neutre'
+        ]);
     }
 }

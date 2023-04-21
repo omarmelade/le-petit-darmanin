@@ -60,5 +60,6 @@ class DefinitionExampleSeeder extends Seeder
             'definition_id' => '9'
         ]);
 
+
     }
 }

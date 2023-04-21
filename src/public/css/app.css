@@ -147,6 +147,11 @@ body {
     display: flex;
 }
 
+.footer-acc-link {
+    color: white;
+    text-decoration: none;
+}
+
 /* FORM RULES */
 
 .form-flex-row {
