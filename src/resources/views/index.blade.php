@@ -2,11 +2,8 @@
 
 @section('content')
     <div>
-        <h2>Description</h2>
-        <hr>
-        <p>Le Petit Darmanin est un projet qui tend à réunir toutes les phrases <i>choc</i> du gouvernement.<br>
-            Étant donner qu'il crée des mots à chaque nouvelle prise de parole, j'ai décidé de créer ce <b>modeste</b>
-            dictionnaire.
+        <p>Le Petit Darmanin est un dictionnaire qui répertorie les expressions <i>choc</i> du gouvernement.<br>
+            N'hésitez pas à m'envoyer des suggestions <a href="https://twitter.com/omar_melade">@omar_melade</a> sur Twitter.
         </p>
     </div>
     <br>

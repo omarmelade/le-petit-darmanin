@@ -16,7 +16,7 @@ class DefinitionExampleSeeder extends Seeder
     public function run()
     {
         DefinitionExample::create([
-            'example' => 'Nous assistions à un ensauvagement de la société.',
+            'example' => 'Nous assistons à un ensauvagement de la société.',
             'definition_id' => '1'
         ]);
 
@@ -26,12 +26,12 @@ class DefinitionExampleSeeder extends Seeder
         ]);
 
         DefinitionExample::create([
-            'example' => 'Les soulevements de la terre sont une bande d\'écoterroristes.',
+            'example' => 'Les soulèvements de la terre sont une bande d\'écoterroristes.',
             'definition_id' => '3'
         ]);
 
         DefinitionExample::create([
-            'example' => 'La macronie est un groupe organisé d\'écoterroristes',
+            'example' => 'Les macronistes sont un groupe organisé d\'écoterroristes',
             'definition_id' => '4'
         ]);
 
@@ -46,7 +46,7 @@ class DefinitionExampleSeeder extends Seeder
         ]);
 
         DefinitionExample::create([
-            'example' => 'Des black bourges car on sait que ce sont parfois des enfants de bonne familles.',
+            'example' => 'Des black bourges car on sait que ce sont parfois des enfants de bonnes familles.',
             'definition_id' => '7'
         ]);
 

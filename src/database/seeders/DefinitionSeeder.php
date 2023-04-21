@@ -15,7 +15,7 @@ class DefinitionSeeder extends Seeder
     public function run()
     {
         Definition::create([
-            'definition' => 'Qui deviens sauvage, se dit d\'un lieu ou d\'une personne',
+            'definition' => 'Qui devient sauvage, se dit d\'un lieu ou d\'une personne',
             'word_id' => '1',
             'author_id' => '1'
         ]);
@@ -33,13 +33,13 @@ class DefinitionSeeder extends Seeder
         ]);
 
         Definition::create([
-            'definition' => 'Toute personne ayant le pouvoir d\'empêcher une action destructrice de l\'environnement et qui ne le ferais pas pour protéger ses intérêts ou ceux de ces amis',
+            'definition' => 'Toute personne ayant le pouvoir d\'empêcher une action destructrice de l\'environnement et qui ne le ferait pas pour protéger ses intérêts ou ceux de ses amis',
             'word_id' => '2',
             'author_id' => '1'
         ]);
 
         Definition::create([
-            'definition' => 'En parlant du pays. Désigne tout parti politique qui fait preuve d\'une opposition forte à un projet et soutiens les manifestations',
+            'definition' => 'En parlant du pays, désigne tout parti politique qui fait preuve d\'une opposition forte à un projet et soutient les manifestations',
             'word_id' => '3',
             'author_id' => '1'
         ]);
