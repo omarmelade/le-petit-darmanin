@@ -18,10 +18,8 @@
             @include('footer')
         </div>
 
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" type="text/js"></script>
-        <script src="{{asset('js/jquery.min.js')}}"></script>
-        <script src="{{asset('js/app.js')}}" charset="utf-8"></script>
-        <script src="{{asset('js/html2canvas.js')}}" charset="utf-8"></script>
+        <script src="{{asset('js/bootstrap.min.js')}}" type="text/js"></script>
+        <script src="{{asset('js/jquery.min.js')}}" type="text/js"></script>
+        <script src="{{asset('js/app.js')}}" charset="utf-8" type="text/js" ></script>
     </body>
 </html>

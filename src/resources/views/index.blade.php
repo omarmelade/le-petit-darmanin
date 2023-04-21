@@ -28,15 +28,14 @@
                     <div class="def-list">
                         @foreach($word->definitions as $definition)
                             <div class="def-list-item">
-                                <label class="def"><label class="index-def">{{$loop->index + 1}}</label> {{$definition->definition}}
+                                <span class="def"><span class="index-def">{{$loop->index + 1}}.</span> {{$definition->definition}}.
                                     @foreach($definition->examples as $ex)
-                                        ,<i><label>{{$ex->example}}</label></i>
+                                        <span class="def-example">{{$ex->example}}</span>
                                     @endforeach
-                                </label>
+                                </span>
                             </div>
                         @endforeach
                     </div>
-{{--                    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="{{$word->$word}}" data-url="https://lepetitdarmanin.fr" data-show-count="false">Tweet</a>--}}
                 </div>
             @endforeach
         </div>

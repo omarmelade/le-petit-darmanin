@@ -53,22 +53,29 @@ body {
 /* title */
 .word {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.5em;
     text-align: start;
     margin-bottom: 0;
 }
 
 .word-type {
     text-align: start;
-    font-size: 15px;
+    font-size: 18px;
     font-style: italic;
     color: #2E86AB;
 }
 
 .def-list {
+    font-size: 18px;
+    word-spacing: .1em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.def-list-item {
+    line-height: 24px;
+    margin-bottom: 5px;
 }
 
 .index-def {
@@ -78,9 +85,15 @@ body {
 
 /* definition */
 .def {
-    font-size: 15px;
-    line-height: 30px;
     color: #124762;
+    margin-bottom: 0;
+}
+
+.def-example {
+    font-size: 95%;
+    color: #000000;
+    font-style: italic;
+    margin-bottom: 0;
 }
 
 /* definition */

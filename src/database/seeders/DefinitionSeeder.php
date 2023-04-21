@@ -15,7 +15,13 @@ class DefinitionSeeder extends Seeder
     public function run()
     {
         Definition::create([
-            'definition' => 'Deviens sauvage, se dit d\'un lieu ou d\'une personne',
+            'definition' => 'Qui deviens sauvage, se dit d\'un lieu ou d\'une personne',
+            'word_id' => '1',
+            'author_id' => '1'
+        ]);
+
+        Definition::create([
+            'definition' => 'Engagement politique de la population en défaveur du gouvernement en place',
             'word_id' => '1',
             'author_id' => '1'
         ]);
@@ -27,7 +33,19 @@ class DefinitionSeeder extends Seeder
         ]);
 
         Definition::create([
-            'definition' => 'En parlant du pays. Désigne la Nupes et plus généralement tout parti politique qui fait preuve d\'une opposition forte à un projet et soutiens les manifestations',
+            'definition' => 'Toute personne ayant le pouvoir d\'empêcher une action destructrice de l\'environnement et qui ne le ferais pas pour protéger ses intérêts ou ceux de ces amis',
+            'word_id' => '2',
+            'author_id' => '1'
+        ]);
+
+        Definition::create([
+            'definition' => 'En parlant du pays. Désigne tout parti politique qui fait preuve d\'une opposition forte à un projet et soutiens les manifestations',
+            'word_id' => '3',
+            'author_id' => '1'
+        ]);
+
+        Definition::create([
+            'definition' => 'Rendre incontrôlable une situation par l\'usage de méthodes démocratiques ou non démocratiques',
             'word_id' => '3',
             'author_id' => '1'
         ]);
