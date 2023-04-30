@@ -4,8 +4,17 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="description" content="Le petit darmanin est un dictionnaire qui recense tous les mots et expressions parfois vagues et incompréhensibles utilisés par le ministre de l’intérieur.">
-	<title>Le Petit Darmanin</title>
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:creator" content="@omar_melade">
+        <meta name="twitter:title" content="Dictionnaire - Le petit darmanin">
+        <meta name="twitter:description" content="Le petit darmanin est un dictionnaire qui recense tous les mots et expressions parfois vagues et incompréhensibles utilisés par le ministre de l'Intérieur et ses collègues.">
+
+        <meta property="og:title" content="Dictionnaire - Le petit darmanin"/>
+        <meta property="og:description" content="Le petit darmanin est un dictionnaire qui recense tous les mots et expressions parfois vagues et incompréhensibles utilisés par le ministre de l'Intérieur et ses collègues." />
+
+        <meta name="description" content="Le petit darmanin est un dictionnaire qui recense tous les mots et expressions parfois vagues et incompréhensibles utilisés par le ministre de l'Intérieur et ses collègues.">
+        <title>Le Petit Darmanin</title>
         <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css')}}">
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     </head>
