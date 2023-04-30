@@ -9,7 +9,7 @@
         <meta name="twitter:creator" content="@omar_melade">
         <meta name="twitter:title" content="Dictionnaire - Le petit darmanin">
         <meta name="twitter:description" content="Le petit darmanin recense tous les mots et expressions choc utilisés par les ministres.">
-        <meta name="twitter:image" content="{{asset('images/lepetitdarmanin_blue.png')}}">
+        <meta name="twitter:image" content="{{asset('images/bordeliser.png')}}">
         <meta property="og:title" content="Dictionnaire - Le petit darmanin"/>
         <meta property="og:description" content="Le petit darmanin est un dictionnaire qui recense tous les mots et expressions parfois vagues et incompréhensibles utilisés par le ministre de l'Intérieur et ses collègues." />
 
