@@ -19,7 +19,7 @@ use App\Http\Controllers\DefinitonExampleController;
 
 Route::get('/', function () {
     return view('index', [
-        'words' => App\Models\Word::all(),
+        'words' => App\Models\Word::all()->shuffle(),
     ]);
 });
 
