@@ -17,7 +17,7 @@
                         <p class="word">{{$word->word}}</p>
                         <div class="word-type">
                             <label class="sword-clas">{{strtolower($word->word_class->value)}}</label>
-                            @if ($word->gender->value != \App\Enums\GenderEnum::Neutre)
+                            @if ($word->gender != \App\Enums\GenderEnum::Neutre)
                                 <label class="gender">{{strtolower($word->gender->value)}}</label>
                             @endif
                         </div>
