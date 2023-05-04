@@ -16,7 +16,7 @@ class DefinitionExampleSeeder extends Seeder
     public function run()
     {
         DefinitionExample::create([
-            'example' => 'Nous assistons à un ensauvagement de la société.',
+            'example' => '« Nous assistons à un ensauvagement de la société. »',
             'definition_id' => '1'
         ]);
 
@@ -36,7 +36,7 @@ class DefinitionExampleSeeder extends Seeder
         ]);
 
         DefinitionExample::create([
-            'example' => 'La Nupes ne cherche qu\'à bordéliser le pays',
+            'example' => '« La Nupes ne cherche qu\'à bordéliser le pays »',
             'definition_id' => '5'
         ]);
 
@@ -46,12 +46,12 @@ class DefinitionExampleSeeder extends Seeder
         ]);
 
         DefinitionExample::create([
-            'example' => 'Des black bourges car on sait que ce sont parfois des enfants de bonnes familles.',
+            'example' => '« Des black bourges car on sait que ce sont parfois des enfants de bonnes familles. »',
             'definition_id' => '7'
         ]);
 
         DefinitionExample::create([
-            'example' => 'Le terrorisme intellectuel de l’extrême gauche.',
+            'example' => '« Le terrorisme intellectuel de l’extrême gauche. »',
             'definition_id' => '8'
         ]);
 
@@ -60,6 +60,25 @@ class DefinitionExampleSeeder extends Seeder
             'definition_id' => '9'
         ]);
 
+        DefinitionExample::create([
+            'example' => 'En parlant des événements dans les deux sèvres, « il y’a une européanisation au moins de cette violence. »',
+            'definition_id' => '10'
+        ]);
+
+        DefinitionExample::create([
+            'example' => 'En parlant des événements dans les deux sèvres, « il y’a une européanisation au moins de cette violence. »',
+            'definition_id' => '11'
+        ]);
+
+        DefinitionExample::create([
+            'example' => 'Un arrêté interdit les « dispositifs sonores amplificateurs de bruit ».',
+            'definition_id' => '12'
+        ]);
+
+        DefinitionExample::create([
+            'example' => 'Les casserolade ne sont qu’un simple concert de dispositifs sonores portatif.',
+            'definition_id' => '13'
+        ]);
 
     }
 }

@@ -51,7 +51,13 @@ class WordSeeder extends Seeder
         ]);
 
         Word::create([
-            'word' => 'dispositifs sonores portatifs',
+            'word' => 'Européanisation de la violence',
+            'word_class' => 'Expression',
+            'gender' => 'Neutre'
+        ]);
+
+        Word::create([
+            'word' => 'Dispositifs sonores portatifs',
             'word_class' => 'Expression',
             'gender' => 'Neutre'
         ]);
