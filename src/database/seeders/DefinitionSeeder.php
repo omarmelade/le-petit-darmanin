@@ -69,25 +69,25 @@ class DefinitionSeeder extends Seeder
         ]);
 
         Definition::create([
-            'definition' => 'Désigne le fait que certains militants d’extrême-gauche viennent d’autres pays pour manifester en France, notamment à St-Soline.',
+            'definition' => 'Désigne le fait que certains militants d’extrême-gauche viennent d’autres pays pour manifester en France, notamment à St-Soline',
             'word_id' => '7',
             'author_id' => '1'
         ]);
 
         Definition::create([
-            'definition' => 'Se réfère au moment où les causes défendues par les opposants traversent les frontières du pays et mobilisent les activistes dans toute l\'Europe.',
+            'definition' => 'Se réfère au moment où les causes défendues par les opposants traversent les frontières du pays et mobilisent les activistes dans toute l\'Europe',
             'word_id' => '7',
             'author_id' => '1'
         ]);
 
         Definition::create([
-            'definition' => 'Tout objet servant à faire du bruit en vue de ne pas entendre le discours ou les mots d\'une personne, ce qui constitue donc un manque de respect envers cette personne.',
+            'definition' => 'Tout objet servant à faire du bruit en vue de ne pas entendre le discours ou les mots d\'une personne, ce qui constitue donc un manque de respect envers cette personne',
             'word_id' => '8',
             'author_id' => '1'
         ]);
 
         Definition::create([
-            'definition' => 'N\'importe quel objet qui permet de faire résonner son mécontentement dans la rue, le but étant de faire comprendre aux gens concernés que l\'heure n\'est plus à l\'écoute.',
+            'definition' => 'N\'importe quel objet qui permet de faire résonner son mécontentement dans la rue, le but étant de faire comprendre aux gens concernés que l\'heure n\'est plus à l\'écoute',
             'word_id' => '8',
             'author_id' => '1'
         ]);
