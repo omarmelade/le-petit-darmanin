@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
         <meta name="twitter:card" content="summary">
-        <meta name="twitter:creator" content="@omar_melade">
+        <meta name="twitter:creator" content="@lepetitdarmanin">
         <meta name="twitter:title" content="Dictionnaire - Le petit darmanin">
         <meta name="twitter:description" content="Le petit darmanin recense tous les mots et expressions choc utilisés par les ministres.">
         <meta name="twitter:image" content="{{asset('images/lepetitdarmanin_blue.png')}}">

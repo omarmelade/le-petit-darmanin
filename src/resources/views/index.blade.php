@@ -3,7 +3,7 @@
 @section('content')
     <div>
         <p>Le Petit Darmanin est un dictionnaire qui répertorie les expressions <i>choc</i> du gouvernement.<br>
-            N'hésitez pas à m'envoyer vos suggestions <a href="https://twitter.com/omar_melade">@omar_melade</a> sur Twitter.
+            N'hésitez pas à m'envoyer vos suggestions <a href="https://twitter.com/lepetitdarmanin">@lepetitdarmanin</a> sur X (Twitter).
         </p>
     </div>
     <br>
